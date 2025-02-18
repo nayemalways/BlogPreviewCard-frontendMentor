@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --primary-color: #f4d04e;
+    --heading-color: #111111;
+}
+
+
+*, *::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", serif;
+    background: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+
+.blog-card {
+    max-width: 19rem;
+    min-width: 16rem;
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    box-shadow: 10px 10px 0px #000;
+    border: 1px solid #000;
+        img {
+            background: var(--primary-color);
+            border-radius: 1rem;
+        }
+}
+
+.text-section {
+    padding-top: 1.5rem;
+    .learning { 
+        display: inline-block;
+        background: var(--primary-color);
+        padding: 8px 10px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .date {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 1rem 0;
+    }
+
+    h1 {
+        font-size: clamp(18px, 3vw, 23px);
+        color: #111111;
+        font-weight: 800;
+    }
+    p {
+        color: gray;
+        font-weight: 400;
+        font-size: clamp(14px, 2vw, 16px);
+        padding: 1rem 0;
+    }
+}
+
+.profile-section{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+        h5 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        img {
+            width: 2rem;
+        }       
+        
+}
+
+
+@media screen and (max-width: 400px) {
+    .blog-card {
+        width: 16rem;
+        padding: 0.9rem;
+    }
+}
