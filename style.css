@@ -78,7 +78,7 @@ img {
     justify-content: start;
     align-items: center;
     gap: 1rem;
-        h5 {
+        p {
             font-size: 14px;
             font-weight: bold;
         }
@@ -87,6 +87,8 @@ img {
         }       
         
 }
+
+
 
 
 @media screen and (max-width: 400px) {
